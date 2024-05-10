@@ -1,10 +1,8 @@
-<footer>
-    <div class="footer-content">
+<footer class="page-footer">
+    <div class="footer-bottom">
         <div class="footer-links">
-            <a href="http://localhost/wordpress/">Trainology</a>
-            <a href="http://localhost/wordpress/category/products/">Products</a>
-            <a href="http://localhost/wordpress/tietoa-meista/">About us</a>
+            <?php wp_nav_menu( [ 'container' => 'nav', 'theme_location' => 'main-menu' ] ); ?>
         </div>
-        <p>© 2023 Trainology. All rights reserved.</p>
+        <p>© <?php echo date('Y'); ?> Trainology. All rights reserved.</p>
     </div>
 </footer>

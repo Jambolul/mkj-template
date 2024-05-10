@@ -42,7 +42,12 @@ function theme_setup(): void {
 
 	// Add menu
 	register_nav_menu( 'main-menu', __( 'Main Menu' ) );
+    // Register Navigation Menu
+    register_nav_menus(array(
+        'footer-menu' => __('Footer Menu', 'esimerkki')
+    ));
 }
+
 
 add_action( 'after_setup_theme', 'theme_setup' );
 
